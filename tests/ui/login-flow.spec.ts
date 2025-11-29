@@ -11,8 +11,4 @@ test.beforeEach(async ({ page }) => {
 test('validate fields', async ({page})=>{
   const joinReal = new RegistrationPage(page);
   await joinReal.validation();
-})
-test.skip('Registration', async ({ page }) => {
-  const joinReal = new RegistrationPage(page);
-  await joinReal.fillDetails();
 });
