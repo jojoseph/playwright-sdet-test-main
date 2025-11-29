@@ -1,4 +1,4 @@
-import { test,expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { RegistrationPage } from '../../pages/login.page';
 
 test.beforeEach(async ({ page }) => {
@@ -8,7 +8,7 @@ test.beforeEach(async ({ page }) => {
   await joinReal.clikJoinLink();
 });
 
-test('validate fields', async ({page})=>{
+test('validate fields', async ({ page }) => {
   const joinReal = new RegistrationPage(page);
   await joinReal.validation();
 });
